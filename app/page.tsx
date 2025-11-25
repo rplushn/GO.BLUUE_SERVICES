@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-white text-slate-900 min-h-screen">
+      {/* HEADER */}
       <header className="fixed top-0 left-0 w-full z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
           <a href="#home" className="flex items-center space-x-2">
@@ -50,20 +51,22 @@ export default function Home() {
         </div>
       </header>
 
+      {/* HERO */}
       <section
         id="home"
-        className="relative w-full min-h-[80vh] bg-white text-slate-900 overflow-hidden"
+        className="relative w-full min-h-[80vh] bg-black text-white overflow-hidden"
       >
         <div className="h-[56px]" aria-hidden />
 
         <img
           src="/laundry_hero.jpg"
           alt="Fresh laundry inside a modern washing machine"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div
-          className="absolute inset-0 opacity-25 mix-blend-soft-light pointer-events-none"
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/95" />
+
+        <div className="absolute inset-0 opacity-25 mix-blend-soft-light pointer-events-none"
           style={{
             backgroundImage:
               "linear-gradient(to right, rgba(148,163,184,0.18) 1px, transparent 1px), linear-gradient(to bottom, rgba(148,163,184,0.18) 1px, transparent 1px)",
@@ -74,19 +77,19 @@ export default function Home() {
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col justify-center items-start md:items-center min-h-[calc(80vh-56px)]">
           <div className="max-w-2xl text-left md:text-center space-y-6">
-            <p className="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1 text-xs uppercase tracking-[0.22em]">
+            <p className="inline-flex items-center rounded-full border border-white/25 bg-black/30 px-3 py-1 text-xs uppercase tracking-[0.22em]">
               <span className="mr-2 h-1.5 w-1.5 rounded-full bg-emerald-400" />
               Next-day laundry pickup & delivery
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
               Premium laundry service
-              <span className="block text-blue-600">
+              <span className="block text-blue-300">
                 so you never do laundry again.
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg text-slate-700">
+            <p className="text-sm sm:text-base md:text-lg text-slate-100/85">
               We pick up, wash, fold and deliver your laundry in 24 hours —
               giving busy families and professionals in Wesley Chapel{" "}
               <span className="font-semibold">3–5 hours back every week.</span>
@@ -95,29 +98,29 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 sm:justify-center pt-2">
               <a
                 href="https://wa.me/18137614272"
-                className="inline-flex items-center justify-center rounded-full bg-slate-900 text-white px-7 py-2.5 text-sm font-semibold shadow-sm hover:bg-slate-800 transition"
+                className="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-7 py-2.5 text-sm font-semibold shadow-sm hover:bg-slate-100 transition"
               >
                 Schedule pickup on WhatsApp
               </a>
               <a
                 href="tel:+18137614272"
-                className="inline-flex items-center justify-center rounded-full border border-slate-900 px-7 py-2.5 text-sm font-semibold hover:bg-slate-50 transition"
+                className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-2.5 text-sm font-semibold hover:bg-white/10 transition"
               >
                 Call (813) 761-4272
               </a>
             </div>
 
-            <div className="pt-3 flex flex-wrap gap-4 text-xs text-slate-600">
+            <div className="pt-3 flex flex-wrap gap-4 text-xs text-slate-200/80">
               <div className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
                 <span>24-hour turnaround</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
                 <span>No contracts. Cancel anytime.</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
                 <span>Serving Wesley Chapel, FL</span>
               </div>
             </div>
@@ -125,6 +128,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION 2 */}
       <section
         id="benefits"
         className="bg-white text-slate-900 border-b border-slate-100"
@@ -152,7 +156,7 @@ export default function Home() {
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Choose the pickup window that fits your day. Morning, afternoon
-                or evening — we adapt to your routine, not the other way around.
+                or evening — we adapt to your routine.
               </p>
             </div>
 
@@ -161,24 +165,24 @@ export default function Home() {
                 24-hour delivery, every time
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Your laundry is washed, dried, folded and delivered back the
-                very next day. No waiting a week. No chasing lost items.
+                Your laundry is washed, dried, folded and delivered the very
+                next day. No waiting. No chasing lost items.
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
               <h3 className="text-lg font-semibold mb-2">
-                3–5 hours of life back per week
+                3–5 hours back per week
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Between sorting, washing, drying, folding and putting away,
-                laundry eats entire evenings. We give that time back to you.
+                Laundry eats entire evenings. We give that time back to you.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* SECTION 3 */}
       <section
         id="how"
         className="bg-slate-50 text-slate-900 border-b border-slate-100"
@@ -201,8 +205,7 @@ export default function Home() {
               </span>
               <h3 className="text-lg font-semibold">Schedule pickup</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Message us on WhatsApp or call to choose your weekly pickup
-                slot. We confirm the time and send you a quick reminder.
+                Message us on WhatsApp or call. We confirm the time and send a reminder.
               </p>
             </div>
 
@@ -210,10 +213,9 @@ export default function Home() {
               <span className="text-xs font-semibold tracking-[0.25em] text-blue-600">
                 STEP 2
               </span>
-              <h3 className="text-lg font-semibold">We pick up at your door</h3>
+              <h3 className="text-lg font-semibold">Pickup at your door</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Place your laundry bag by the door. Our driver picks it up,
-                weighs it, and transports it to our partner facilities.
+                Place your laundry bag by the door. We pick it up and weigh it.
               </p>
             </div>
 
@@ -223,8 +225,7 @@ export default function Home() {
               </span>
               <h3 className="text-lg font-semibold">Wash, dry & fold</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Your clothes are professionally washed, dried and folded with
-                care — separated by colors and fabric types.
+                Professionally cleaned and folded with care.
               </p>
             </div>
 
@@ -234,14 +235,14 @@ export default function Home() {
               </span>
               <h3 className="text-lg font-semibold">Delivered in 24 hours</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                We return everything neatly folded and ready to put away — usually
-                within 24 hours of pickup.
+                Ready to put away — usually within 24 hours.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* SECTION 4 */}
       <section className="bg-white text-slate-900 border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-5">
@@ -250,62 +251,49 @@ export default function Home() {
             </h2>
             <p className="text-sm md:text-base text-slate-600 leading-relaxed">
               GOBLUUE is perfect for busy households, professionals, and anyone
-              who is tired of losing weeknights and weekends to laundry piles.
+              tired of losing evenings to laundry.
             </p>
             <ul className="space-y-3 text-sm text-slate-600">
-              <li>
-                • Parents juggling school, sports and work who want one less
-                chore to worry about.
-              </li>
-              <li>
-                • Professionals who value clean clothes but do not want to
-                spend Saturdays doing loads.
-              </li>
-              <li>
-                • Small business owners who need to look sharp every day without
-                thinking about laundry.
-              </li>
+              <li>• Parents juggling busy schedules.</li>
+              <li>• Professionals who need clean clothes without the hassle.</li>
+              <li>• Small business owners needing consistency.</li>
             </ul>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 flex flex-col justify-between">
-              <div>
-                <p className="text-xs font-semibold text-blue-600 uppercase tracking-[0.22em] mb-2">
-                  TIME SAVED
-                </p>
-                <p className="text-3xl font-semibold mb-1">3–5 hrs</p>
-                <p className="text-xs text-slate-500">
-                  Typical weekly time saved for a family of 3–4.
-                </p>
-              </div>
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
+              <p className="text-xs font-semibold text-blue-600 uppercase mb-2">
+                TIME SAVED
+              </p>
+              <p className="text-3xl font-semibold mb-1">3–5 hrs</p>
+              <p className="text-xs text-slate-500">
+                Weekly time saved for a family of 3–4.
+              </p>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 flex flex-col justify-between">
-              <div>
-                <p className="text-xs font-semibold text-blue-600 uppercase tracking-[0.22em] mb-2">
-                  TURNAROUND
-                </p>
-                <p className="text-3xl font-semibold mb-1">24 hrs</p>
-                <p className="text-xs text-slate-500">
-                  Standard pickup-to-delivery window in Wesley Chapel.
-                </p>
-              </div>
+            <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
+              <p className="text-xs font-semibold text-blue-600 uppercase mb-2">
+                TURNAROUND
+              </p>
+              <p className="text-3xl font-semibold mb-1">24 hrs</p>
+              <p className="text-xs text-slate-500">
+                Standard pickup-to-delivery window.
+              </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 col-span-2">
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-[0.22em] mb-2">
+              <p className="text-xs font-semibold text-blue-600 uppercase mb-2">
                 EXPERIENCE
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Imagine opening your door to perfectly folded, fresh laundry —{" "}
-                <strong>every single week</strong> — without touching a washer or dryer.
+                Imagine opening your door to perfectly folded laundry every week — without touching a washer or dryer.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* SECTION 5 */}
       <section
         id="pricing"
         className="bg-slate-50 text-slate-900 border-b border-slate-100"
@@ -316,8 +304,8 @@ export default function Home() {
               One simple monthly plan.
             </h2>
             <p className="text-sm md:text-base text-slate-600 mb-8">
-              No confusing tiers. No hidden fees. Just a premium laundry service
-              designed to give busy families and professionals their time back.
+              No confusing tiers. No hidden fees. Just premium service designed
+              to give you your time back.
             </p>
 
             <div className="max-w-md rounded-3xl border border-slate-200 bg-white shadow-sm p-8 space-y-6">
@@ -354,14 +342,13 @@ export default function Home() {
               </a>
 
               <p className="text-[11px] text-slate-500">
-                Have questions before starting?{" "}
+                Questions?{" "}
                 <a
                   href="mailto:hello@gobluue.com"
                   className="text-blue-600 hover:underline"
                 >
                   Email hello@gobluue.com
-                </a>{" "}
-                and we will help you decide if the service is a fit.
+                </a>
               </p>
             </div>
           </div>
@@ -378,6 +365,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION 6 */}
       <section
         id="proof"
         className="bg-white text-slate-900 border-b border-slate-100"
@@ -385,21 +373,19 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-24">
           <div className="max-w-3xl mb-12 text-center mx-auto space-y-4">
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Trusted by busy professionals and families across Wesley Chapel.
+              Trusted by busy professionals & families.
             </h2>
             <p className="text-sm md:text-base text-slate-600">
-              From healthcare workers and small business owners to families with
-              kids and pets — GOBLUUE is the quiet system behind their always-
-              clean laundry.
+              From healthcare workers to business owners — GOBLUUE is the quiet
+              system behind their always-clean laundry.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                I get hours of my week back. Their next-day delivery is
-                insanely reliable — clothes are always fresh and folded
-                perfectly.
+                “I get hours of my week back. Their delivery is insanely
+                reliable — always fresh and folded perfectly.”
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Sarah M., Nurse
@@ -409,8 +395,8 @@ export default function Home() {
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                Our family of five produces SO MUCH laundry. GOBLUUE has been
-                a lifesaver. We cannot imagine going back.
+                “Our family of five produces SO MUCH laundry. GOBLUUE has been a
+                lifesaver. We can&apos;t imagine going back.”
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Brandon & Kelly
@@ -420,8 +406,8 @@ export default function Home() {
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                For the price? Unreal. My shirts come back crisp and ready for
-                client meetings. It just works.
+                “For the price? Unreal. My shirts come back ready for client
+                meetings. It just works.”
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Marcus T., Small Business Owner
@@ -432,6 +418,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECTION 7 */}
       <section
         id="faq"
         className="bg-slate-50 text-slate-900 border-b border-slate-100"
@@ -442,8 +429,7 @@ export default function Home() {
               Frequently asked questions
             </h2>
             <p className="text-sm md:text-base text-slate-600">
-              If you do not see your question here, send us a quick message
-              on WhatsApp or email{" "}
+              Don&apos;t see your question? Message us on WhatsApp or email{" "}
               <a
                 href="mailto:hello@gobluue.com"
                 className="text-blue-600 hover:underline"
@@ -460,19 +446,16 @@ export default function Home() {
                 What areas do you currently serve?
               </h3>
               <p className="text-slate-600">
-                We currently serve Wesley Chapel and nearby neighborhoods. As we
-                grow, we will expand routes to cover more of North Tampa.
+                We currently serve Wesley Chapel and nearby neighborhoods.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold mb-1">
-                How do I know how many pounds I am using?
+                How do I know how many pounds I&apos;m using?
               </h3>
               <p className="text-slate-600">
-                We weigh your laundry at pickup and keep a running total for the
-                month. Most individuals and couples comfortably fit within the
-                20 lbs / week included in the plan.
+                We weigh your laundry at pickup and keep a running total.
               </p>
             </div>
 
@@ -481,26 +464,24 @@ export default function Home() {
                 What if I need to skip a week or pause?
               </h3>
               <p className="text-slate-600">
-                No problem. Just let us know at least 24 hours before your
-                scheduled pickup. You can skip weeks or pause your service at
-                any time.
+                No problem. Just let us know 24 hours before your pickup.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold mb-1">
-                Do you handle special items or delicate fabrics?
+                Do you handle special or delicate fabrics?
               </h3>
               <p className="text-slate-600">
-                Yes. You can mark delicate items in a separate bag or leave a
-                note, and we will wash them on gentle cycles and air dry when
-                needed.
+                Yes. Mark delicate items and we&apos;ll wash them on gentle
+                cycles and air dry when needed.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* SECTION 8 */}
       <section className="bg-white text-slate-900">
         <div className="max-w-4xl mx-auto px-6 py-20 md:py-24 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
@@ -529,6 +510,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="bg-slate-950 text-slate-300 text-xs md:text-sm">
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="text-center md:text-left space-y-1">
