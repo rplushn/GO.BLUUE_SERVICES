@@ -68,9 +68,6 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* OVERLAY GRADIENT */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/95" />
-
         {/* LÍNEAS ESTILO VERCEL */}
         <div
           className="absolute inset-0 opacity-25 mix-blend-soft-light pointer-events-none"
