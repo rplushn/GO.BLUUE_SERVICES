@@ -56,7 +56,7 @@ export default function Home() {
       {/* HERO OSCURO (80% ALTURA) */}
       <section
         id="home"
-        className="relative w-full min-h-[80vh] bg-white text-slate-900 overflow-hidden"
+        className="relative w-full min-h-[80vh] bg-black text-white overflow-hidden"
       >
         {/* Offset for fixed header */}
         <div className="h-[56px]" aria-hidden />
@@ -67,6 +67,9 @@ export default function Home() {
           alt="Fresh laundry inside a modern washing machine"
           className="absolute inset-0 w-full h-full object-cover"
         />
+
+        {/* OVERLAY GRADIENT */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/95" />
 
         {/* LÍNEAS ESTILO VERCEL */}
         <div
