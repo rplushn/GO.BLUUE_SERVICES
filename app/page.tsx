@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "GOBLUUE Laundry — Premium Laundry Pickup & Delivery in Wesley Chapel",
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen bg-white text-slate-900">
       <div className="max-w-4xl mx-auto px-4 py-16 md:py-24">
 
+        {/* HERO */}
         <section className="text-center">
           <h1 className="text-3xl md:text-5xl font-medium tracking-tight">
             Premium Laundry Pickup & Delivery in 24 Hours
@@ -32,9 +34,21 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="mt-10 rounded-2xl overflow-hidden border border-slate-200">
+            <Image
+              src="/laundry-hero.jpg"
+              alt="Freshly folded laundry neatly stacked"
+              width={1400}
+              height={800}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </div>
+
           <hr className="mt-12 border-slate-200" />
         </section>
 
+        {/* HOW IT WORKS */}
         <section className="mt-16 md:mt-24">
           <h2 className="text-2xl md:text-3xl font-normal tracking-tight text-center">
             How GOBLUUE Laundry Works
@@ -45,21 +59,21 @@ export default function Home() {
 
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             <div>
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">Step 1</p>
+              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">STEP 1</p>
               <h3 className="mt-2 text-lg font-medium">Schedule Pickup</h3>
               <p className="mt-2 text-sm md:text-base font-light text-slate-700">
                 Choose the pickup time that works best for you.
               </p>
             </div>
             <div>
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">Step 2</p>
+              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">STEP 2</p>
               <h3 className="mt-2 text-lg font-medium">We Wash & Fold</h3>
               <p className="mt-2 text-sm md:text-base font-light text-slate-700">
                 Professionally washed, dried, and folded.
               </p>
             </div>
             <div>
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">Step 3</p>
+              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">STEP 3</p>
               <h3 className="mt-2 text-lg font-medium">24-Hour Delivery</h3>
               <p className="mt-2 text-sm md:text-base font-light text-slate-700">
                 Your laundry is delivered next day.
@@ -70,6 +84,37 @@ export default function Home() {
 
         <hr className="mt-16 border-slate-200" />
 
+        {/* VISUAL SECTION */}
+        <section className="mt-16 md:mt-24 grid gap-10 md:grid-cols-2 items-center">
+          <div className="order-2 md:order-1">
+            <h2 className="text-2xl md:text-3xl font-normal tracking-tight">
+              Perfectly folded, ready to put away.
+            </h2>
+            <p className="mt-4 text-base md:text-lg font-light text-slate-700">
+              Your clothes come back neatly folded and organized — ready to go straight into your
+              closet. No chaos, no laundry piles, just a clean, fresh reset every week.
+            </p>
+            <p className="mt-4 text-sm md:text-base font-light text-slate-700">
+              Designed for busy professionals, couples and families who want hotel-level quality at
+              home, without lifting a finger.
+            </p>
+          </div>
+          <div className="order-1 md:order-2">
+            <div className="rounded-2xl overflow-hidden border border-slate-200">
+              <Image
+                src="/laundry-folded.jpg"
+                alt="Stack of neatly folded clothes on a clean surface"
+                width={900}
+                height={900}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
+        <hr className="mt-16 border-slate-200" />
+
+        {/* PRICING */}
         <section className="mt-16 md:mt-24 text-center">
           <h2 className="text-2xl md:text-3xl font-normal tracking-tight">
             One Plan. One Price.
@@ -78,7 +123,7 @@ export default function Home() {
             Simple monthly pricing — no contracts, no hidden fees.
           </p>
 
-          <div className="mt-10 inline-block border border-slate-200 rounded-xl px-8 py-8 text-left max-w-xl">
+          <div className="mt-10 inline-block border border-slate-200 rounded-2xl px-8 py-8 text-left max-w-xl bg-white/60 backdrop-blur">
             <h3 className="text-xl md:text-2xl font-medium">GOBLUUE Plan — $129 / month</h3>
             <p className="mt-3 text-sm md:text-base font-light text-slate-700 leading-relaxed">
               • 20 lbs per week <br />
@@ -100,6 +145,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* FINAL CTA */}
         <section className="mt-20 md:mt-28 text-center">
           <h2 className="text-2xl md:text-3xl font-normal tracking-tight">
             Ready to never do laundry again?
