@@ -53,10 +53,10 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO OSCURO (80% ALTURA) */}
+      {/* HERO FONDO BLANCO */}
       <section
         id="home"
-        className="relative w-full min-h-[80vh] bg-black text-white overflow-hidden"
+        className="relative w-full min-h-[80vh] bg-white text-slate-900 overflow-hidden"
       >
         {/* Offset for fixed header */}
         <div className="h-[56px]" aria-hidden />
@@ -65,11 +65,8 @@ export default function Home() {
         <img
           src="/laundry_hero.jpg"
           alt="Fresh laundry inside a modern washing machine"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
-
-        {/* OVERLAY GRADIENT */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/95" />
 
         {/* LÍNEAS ESTILO VERCEL */}
         <div
@@ -85,19 +82,19 @@ export default function Home() {
         {/* CONTENIDO HERO */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col justify-center items-start md:items-center min-h-[calc(80vh-56px)]">
           <div className="max-w-2xl text-left md:text-center space-y-6">
-            <p className="inline-flex items-center rounded-full border border-white/25 bg-black/30 px-3 py-1 text-xs uppercase tracking-[0.22em]">
+            <p className="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1 text-xs uppercase tracking-[0.22em]">
               <span className="mr-2 h-1.5 w-1.5 rounded-full bg-emerald-400" />
               Next-day laundry pickup & delivery
             </p>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
               Premium laundry service
-              <span className="block text-blue-300">
+              <span className="block text-blue-600">
                 so you never do laundry again.
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg text-slate-100/85">
+            <p className="text-sm sm:text-base md:text-lg text-slate-700">
               We pick up, wash, fold and deliver your laundry in 24 hours —
               giving busy families and professionals in Wesley Chapel{" "}
               <span className="font-semibold">3–5 hours back every week.</span>
@@ -107,30 +104,30 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 sm:justify-center pt-2">
               
                 href="https://wa.me/18137614272"
-                className="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-7 py-2.5 text-sm font-semibold shadow-sm hover:bg-slate-100 transition"
+                className="inline-flex items-center justify-center rounded-full bg-slate-900 text-white px-7 py-2.5 text-sm font-semibold shadow-sm hover:bg-slate-800 transition"
               >
                 Schedule pickup on WhatsApp
               </a>
               
                 href="tel:+18137614272"
-                className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-2.5 text-sm font-semibold hover:bg-white/10 transition"
+                className="inline-flex items-center justify-center rounded-full border border-slate-900 px-7 py-2.5 text-sm font-semibold hover:bg-slate-50 transition"
               >
                 Call (813) 761-4272
               </a>
             </div>
 
             {/* QUICK STATS */}
-            <div className="pt-3 flex flex-wrap gap-4 text-xs text-slate-200/80">
+            <div className="pt-3 flex flex-wrap gap-4 text-xs text-slate-600">
               <div className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
                 <span>24-hour turnaround</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
                 <span>No contracts. Cancel anytime.</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
                 <span>Serving Wesley Chapel, FL</span>
               </div>
             </div>
