@@ -65,9 +65,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
-  );
-}
+
       {/* SECCIÓN 2 — BENEFICIO GRANDE + SUBTEXTO */}
       <section className="bg-black py-28 px-6 text-center">
         <div className="max-w-4xl mx-auto">
@@ -83,11 +81,11 @@ export default function Home() {
           </p>
         </div>
       </section>
+
       {/* SECCIÓN 3 — GRID DE 6 BENEFICIOS PREMIUM */}
       <section className="bg-black py-24 px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          {/* 1 */}
           <div className="border border-white/10 rounded-xl p-8 hover:bg-white/[0.03] transition">
             <h3 className="text-xl font-semibold mb-3">Pickup on Your Schedule</h3>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -96,7 +94,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 2 */}
           <div className="border border-white/10 rounded-xl p-8 hover:bg-white/[0.03] transition">
             <h3 className="text-xl font-semibold mb-3">24-Hour Delivery</h3>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -104,7 +101,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 3 */}
           <div className="border border-white/10 rounded-xl p-8 hover:bg-white/[0.03] transition">
             <h3 className="text-xl font-semibold mb-3">Premium Wash & Fold</h3>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -112,7 +108,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 4 */}
           <div className="border border-white/10 rounded-xl p-8 hover:bg-white/[0.03] transition">
             <h3 className="text-xl font-semibold mb-3">Save 3–5 Hours Weekly</h3>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -121,7 +116,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 5 */}
           <div className="border border-white/10 rounded-xl p-8 hover:bg-white/[0.03] transition">
             <h3 className="text-xl font-semibold mb-3">Phone & Text Support</h3>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -129,7 +123,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 6 */}
           <div className="border border-white/10 rounded-xl p-8 hover:bg-white/[0.03] transition">
             <h3 className="text-xl font-semibold mb-3">No Contracts. Cancel Anytime.</h3>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -139,11 +132,11 @@ export default function Home() {
 
         </div>
       </section>
+
       {/* SECCIÓN 4 — SOCIAL PROOF */}
       <section className="bg-neutral-950 py-24 px-6 border-t border-white/10">
         <div className="max-w-5xl mx-auto text-center">
 
-          {/* Título */}
           <h2 className="text-3xl md:text-4xl font-semibold mb-6">
             Trusted by busy professionals across Wesley Chapel
           </h2>
@@ -153,10 +146,7 @@ export default function Home() {
             chooses <span className="text-white font-medium">GOBLUUE Laundry</span> to handle the most demanding weekly chore.
           </p>
 
-          {/* Grid de testimonios */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-            {/* Testimonio 1 */}
             <div className="border border-white/10 rounded-xl p-7 bg-white/[0.02] backdrop-blur-sm hover:bg-white/[0.05] transition">
               <p className="text-white/80 text-sm leading-relaxed mb-5">
                 “I get hours of my week back. Their next-day delivery is insanely reliable.”
@@ -165,7 +155,6 @@ export default function Home() {
               <p className="text-white/50 text-xs">Nurse • Wesley Chapel</p>
             </div>
 
-            {/* Testimonio 2 */}
             <div className="border border-white/10 rounded-xl p-7 bg-white/[0.02] backdrop-blur-sm hover:bg-white/[0.05] transition">
               <p className="text-white/80 text-sm leading-relaxed mb-5">
                 “Our family of five produces SO MUCH laundry. GOBLUUE has been a lifesaver.”
@@ -174,7 +163,6 @@ export default function Home() {
               <p className="text-white/50 text-xs">Parents • North Tampa</p>
             </div>
 
-            {/* Testimonio 3 */}
             <div className="border border-white/10 rounded-xl p-7 bg-white/[0.02] backdrop-blur-sm hover:bg-white/[0.05] transition">
               <p className="text-white/80 text-sm leading-relaxed mb-5">
                 “For the price? Unreal. Clothes always come back perfect. Highly recommend.”
@@ -182,10 +170,11 @@ export default function Home() {
               <p className="text-white font-semibold text-sm">— Marcus T.</p>
               <p className="text-white/50 text-xs">Small Business Owner</p>
             </div>
-
           </div>
+
         </div>
       </section>
+
       {/* SECCIÓN 5 — PRICING PREMIUM */}
       <section className="bg-black py-24 px-6 border-t border-white/10">
         <div className="max-w-4xl mx-auto text-center">
@@ -199,7 +188,6 @@ export default function Home() {
             to give busy families & professionals their time back.
           </p>
 
-          {/* Pricing Card */}
           <div className="border border-white/10 bg-white/[0.03] backdrop-blur-sm p-12 rounded-2xl max-w-lg mx-auto hover:bg-white/[0.07] transition">
             <h3 className="text-2xl font-semibold text-white mb-2">GOBLUUE Monthly Plan</h3>
 
@@ -208,7 +196,7 @@ export default function Home() {
               <span className="text-white/60 mb-2">/ month</span>
             </div>
 
-            <ul className="text-white/70 text-sm leading-relaxed space-y-2 mb-10 text-left max-w-xs mx-auto">
+            <ul className="text-white/70 text-sm leading-relaxed space y-2 mb-10 text-left max-w-xs mx-auto">
               <li>• 20 lbs per week</li>
               <li>• 1 weekly pickup</li>
               <li>• Wash, dry & fold</li>
@@ -218,7 +206,6 @@ export default function Home() {
               <li>• Cancel anytime</li>
             </ul>
 
-            {/* CTA */}
             <a
               href="https://wa.me/18137614272"
               className="block text-center bg-blue-500 hover:bg-blue-600 transition text-white font-medium py-3 rounded-xl"
@@ -229,6 +216,7 @@ export default function Home() {
 
         </div>
       </section>
+
       {/* SECCIÓN 6 — CTA FINAL */}
       <section className="bg-neutral-950 py-28 px-6 text-center border-t border-white/10">
         <div className="max-w-3xl mx-auto">
@@ -271,3 +259,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+    </main>
+  );
+}
