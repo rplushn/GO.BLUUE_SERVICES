@@ -56,7 +56,7 @@ export default function Home() {
       {/* HERO OSCURO (80% ALTURA) */}
       <section
         id="home"
-        className="relative w-full min-h-[80vh] bg-black text-white overflow-hidden"
+        className="relative w-full min-h-[80vh] bg-white text-slate-900 overflow-hidden"
       >
         {/* Offset for fixed header */}
         <div className="h-[56px]" aria-hidden />
