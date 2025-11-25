@@ -1,5 +1,5 @@
 {
-  "name": "gobluue-laundry",
+  "name": "gobluue-services",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,9 +13,12 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.23",
-    "tailwindcss": "^3.3.2",
-    "typescript": "^5.3.3"
+    "@types/node": "20.11.17",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.31",
+    "tailwindcss": "3.3.5",
+    "typescript": "5.3.3"
   }
 }
