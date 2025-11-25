@@ -9,17 +9,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="bg-white text-slate-900 min-h-screen">
-      {/* HEADER */}
       <header className="fixed top-0 left-0 w-full z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
-          {/* LOGO / BRAND */}
           <a href="#home" className="flex items-center space-x-2">
             <span className="text-sm tracking-[0.35em] font-semibold text-slate-900">
               GOBLUUE
             </span>
           </a>
 
-          {/* NAV */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
             <a href="#home" className="hover:text-blue-600 transition">
               Home
@@ -36,14 +33,14 @@ export default function Home() {
             <a href="#faq" className="hover:text-blue-600 transition">
               FAQ
             </a>
-            
+            <a
               href="https://instagram.com/go.bluue"
               target="_blank"
               className="hover:text-blue-600 transition"
             >
               Instagram
             </a>
-            
+            <a
               href="mailto:hello@gobluue.com"
               className="inline-flex items-center rounded-full border border-slate-900 px-4 py-1.5 text-xs font-semibold tracking-wide hover:bg-slate-900 hover:text-white transition"
             >
@@ -53,22 +50,18 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO FONDO BLANCO */}
       <section
         id="home"
         className="relative w-full min-h-[80vh] bg-white text-slate-900 overflow-hidden"
       >
-        {/* Offset for fixed header */}
         <div className="h-[56px]" aria-hidden />
 
-        {/* IMAGEN DE FONDO */}
         <img
           src="/laundry_hero.jpg"
           alt="Fresh laundry inside a modern washing machine"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
 
-        {/* LÍNEAS ESTILO VERCEL */}
         <div
           className="absolute inset-0 opacity-25 mix-blend-soft-light pointer-events-none"
           style={{
@@ -79,7 +72,6 @@ export default function Home() {
           }}
         />
 
-        {/* CONTENIDO HERO */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col justify-center items-start md:items-center min-h-[calc(80vh-56px)]">
           <div className="max-w-2xl text-left md:text-center space-y-6">
             <p className="inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1 text-xs uppercase tracking-[0.22em]">
@@ -100,15 +92,14 @@ export default function Home() {
               <span className="font-semibold">3–5 hours back every week.</span>
             </p>
 
-            {/* CTA BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-3 sm:justify-center pt-2">
-              
+              <a
                 href="https://wa.me/18137614272"
                 className="inline-flex items-center justify-center rounded-full bg-slate-900 text-white px-7 py-2.5 text-sm font-semibold shadow-sm hover:bg-slate-800 transition"
               >
                 Schedule pickup on WhatsApp
               </a>
-              
+              <a
                 href="tel:+18137614272"
                 className="inline-flex items-center justify-center rounded-full border border-slate-900 px-7 py-2.5 text-sm font-semibold hover:bg-slate-50 transition"
               >
@@ -116,7 +107,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* QUICK STATS */}
             <div className="pt-3 flex flex-wrap gap-4 text-xs text-slate-600">
               <div className="flex items-center space-x-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
@@ -135,7 +125,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECCIÓN 2 — BIG PROMISE EN FONDO BLANCO */}
       <section
         id="benefits"
         className="bg-white text-slate-900 border-b border-slate-100"
@@ -156,7 +145,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 3 BENEFICIOS PRINCIPALES */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="rounded-2xl border border-slate-200 bg-slate-50/40 p-6">
               <h3 className="text-lg font-semibold mb-2">
@@ -191,7 +179,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECCIÓN 3 — HOW IT WORKS / PASOS */}
       <section
         id="how"
         className="bg-slate-50 text-slate-900 border-b border-slate-100"
@@ -208,7 +195,6 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
-            {/* STEP 1 */}
             <div className="flex flex-col space-y-3">
               <span className="text-xs font-semibold tracking-[0.25em] text-blue-600">
                 STEP 1
@@ -220,7 +206,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* STEP 2 */}
             <div className="flex flex-col space-y-3">
               <span className="text-xs font-semibold tracking-[0.25em] text-blue-600">
                 STEP 2
@@ -232,7 +217,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* STEP 3 */}
             <div className="flex flex-col space-y-3">
               <span className="text-xs font-semibold tracking-[0.25em] text-blue-600">
                 STEP 3
@@ -244,7 +228,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* STEP 4 */}
             <div className="flex flex-col space-y-3">
               <span className="text-xs font-semibold tracking-[0.25em] text-blue-600">
                 STEP 4
@@ -259,10 +242,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECCIÓN 4 — WHY GOBLUUE / TARGET IDEAL */}
       <section className="bg-white text-slate-900 border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* COPY */}
           <div className="space-y-5">
             <h2 className="text-2xl md:text-3xl font-semibold">
               Built for people whose time is worth more than laundry.
@@ -277,7 +258,7 @@ export default function Home() {
                 chore to worry about.
               </li>
               <li>
-                • Professionals who value clean clothes but don&apos;t want to
+                • Professionals who value clean clothes but do not want to
                 spend Saturdays doing loads.
               </li>
               <li>
@@ -287,7 +268,6 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* STATS / HIGHLIGHTS */}
           <div className="grid grid-cols-2 gap-6">
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 flex flex-col justify-between">
               <div>
@@ -326,20 +306,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECCIÓN 5 — PRICING + FOTO AL LADO */}
       <section
         id="pricing"
         className="bg-slate-50 text-slate-900 border-b border-slate-100"
       >
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* PRICING CARD */}
           <div className="order-2 md:order-1">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3">
               One simple monthly plan.
             </h2>
             <p className="text-sm md:text-base text-slate-600 mb-8">
               No confusing tiers. No hidden fees. Just a premium laundry service
-              designed to give busy families & professionals their time back.
+              designed to give busy families and professionals their time back.
             </p>
 
             <div className="max-w-md rounded-3xl border border-slate-200 bg-white shadow-sm p-8 space-y-6">
@@ -368,7 +346,7 @@ export default function Home() {
                 <li>• No contracts. Cancel anytime.</li>
               </ul>
 
-              
+              <a
                 href="https://wa.me/18137614272"
                 className="block text-center rounded-full bg-blue-600 text-white text-sm font-semibold py-3 hover:bg-blue-700 transition"
               >
@@ -377,18 +355,17 @@ export default function Home() {
 
               <p className="text-[11px] text-slate-500">
                 Have questions before starting?{" "}
-                
+                <a
                   href="mailto:hello@gobluue.com"
                   className="text-blue-600 hover:underline"
                 >
                   Email hello@gobluue.com
                 </a>{" "}
-                and we&apos;ll help you decide if the service is a fit.
+                and we will help you decide if the service is a fit.
               </p>
             </div>
           </div>
 
-          {/* FOTO AL LADO DEL PRECIO */}
           <div className="order-1 md:order-2">
             <div className="rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm">
               <img
@@ -401,7 +378,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECCIÓN 6 — SOCIAL PROOF / TESTIMONIOS */}
       <section
         id="proof"
         className="bg-white text-slate-900 border-b border-slate-100"
@@ -409,7 +385,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-24">
           <div className="max-w-3xl mb-12 text-center mx-auto space-y-4">
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Trusted by busy professionals & families across Wesley Chapel.
+              Trusted by busy professionals and families across Wesley Chapel.
             </h2>
             <p className="text-sm md:text-base text-slate-600">
               From healthcare workers and small business owners to families with
@@ -421,9 +397,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                "I get hours of my week back. Their next-day delivery is
+                I get hours of my week back. Their next-day delivery is
                 insanely reliable — clothes are always fresh and folded
-                perfectly."
+                perfectly.
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Sarah M., Nurse
@@ -433,8 +409,8 @@ export default function Home() {
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                "Our family of five produces SO MUCH laundry. GOBLUUE has been
-                a lifesaver. We can&apos;t imagine going back."
+                Our family of five produces SO MUCH laundry. GOBLUUE has been
+                a lifesaver. We cannot imagine going back.
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Brandon & Kelly
@@ -444,8 +420,8 @@ export default function Home() {
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                "For the price? Unreal. My shirts come back crisp and ready for
-                client meetings. It just works."
+                For the price? Unreal. My shirts come back crisp and ready for
+                client meetings. It just works.
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Marcus T., Small Business Owner
@@ -456,7 +432,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECCIÓN 7 — FAQ SIMPLE */}
       <section
         id="faq"
         className="bg-slate-50 text-slate-900 border-b border-slate-100"
@@ -467,9 +442,9 @@ export default function Home() {
               Frequently asked questions
             </h2>
             <p className="text-sm md:text-base text-slate-600">
-              If you don&apos;t see your question here, send us a quick message
+              If you do not see your question here, send us a quick message
               on WhatsApp or email{" "}
-              
+              <a
                 href="mailto:hello@gobluue.com"
                 className="text-blue-600 hover:underline"
               >
@@ -486,13 +461,13 @@ export default function Home() {
               </h3>
               <p className="text-slate-600">
                 We currently serve Wesley Chapel and nearby neighborhoods. As we
-                grow, we&apos;ll expand routes to cover more of North Tampa.
+                grow, we will expand routes to cover more of North Tampa.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold mb-1">
-                How do I know how many pounds I&apos;m using?
+                How do I know how many pounds I am using?
               </h3>
               <p className="text-slate-600">
                 We weigh your laundry at pickup and keep a running total for the
@@ -518,7 +493,7 @@ export default function Home() {
               </h3>
               <p className="text-slate-600">
                 Yes. You can mark delicate items in a separate bag or leave a
-                note, and we&apos;ll wash them on gentle cycles and air dry when
+                note, and we will wash them on gentle cycles and air dry when
                 needed.
               </p>
             </div>
@@ -526,7 +501,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECCIÓN 8 — CTA FINAL */}
       <section className="bg-white text-slate-900">
         <div className="max-w-4xl mx-auto px-6 py-20 md:py-24 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
@@ -539,13 +513,13 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            
+            <a
               href="https://wa.me/18137614272"
               className="inline-flex items-center justify-center rounded-full bg-blue-600 text-white text-sm font-semibold px-8 py-3 hover:bg-blue-700 transition"
             >
               Schedule your first pickup
             </a>
-            
+            <a
               href="tel:+18137614272"
               className="inline-flex items-center justify-center rounded-full border border-slate-900 text-sm font-semibold px-8 py-3 hover:bg-slate-900 hover:text-white transition"
             >
@@ -555,7 +529,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="bg-slate-950 text-slate-300 text-xs md:text-sm">
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="text-center md:text-left space-y-1">
@@ -565,7 +538,7 @@ export default function Home() {
             </p>
             <p>
               Contact:{" "}
-              
+              <a
                 href="mailto:hello@gobluue.com"
                 className="underline underline-offset-2"
               >
@@ -576,20 +549,20 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4 text-center md:text-right">
-            
+            <a
               href="#home"
               className="hover:text-white transition underline-offset-2 hover:underline"
             >
               Home
             </a>
-            
+            <a
               href="https://instagram.com/go.bluue"
               target="_blank"
               className="hover:text-white transition underline-offset-2 hover:underline"
             >
               Instagram
             </a>
-            
+            <a
               href="mailto:hello@gobluue.com"
               className="hover:text-white transition underline-offset-2 hover:underline"
             >
