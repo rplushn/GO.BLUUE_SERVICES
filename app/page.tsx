@@ -12,46 +12,84 @@ export default function Home() {
     <main className="min-h-screen bg-white text-slate-900">
       <div className="max-w-4xl mx-auto px-4 py-16 md:py-24">
 
-       {/* HERO */}
-<section
-  className="relative h-[90vh] w-full flex items-center justify-center text-center"
-  style={{
-    backgroundImage: "url('/laundry_hero.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  {/* Overlay oscuro suave */}
-  <div className="absolute inset-0 bg-black/30"></div>
+       import Image from "next/image";
 
-  {/* Contenido */}
-  <div className="relative z-10 max-w-2xl px-6">
-    <h1 className="text-4xl md:text-6xl font-medium text-white">
-      Premium Laundry Pickup & Delivery in 24 Hours
-    </h1>
+export default function Home() {
+  return (
+    <main className="bg-white text-slate-900">
+      
+      {/* HEADER */}
+      <header className="w-full bg-black text-white flex items-center justify-between px-6 py-3">
+        <div className="flex items-center gap-3">
+          <Image src="/2.svg" alt="logo" width={40} height={40} />
+          <span className="text-lg font-semibold tracking-tight">GOBLUUE</span>
+        </div>
 
-    <p className="mt-4 text-lg md:text-xl text-white/90">
-      Serving Wesley Chapel — simple, fast, contract-free.
-    </p>
+        <nav className="flex items-center gap-6">
+          <a href="/" className="hover:opacity-80">Home</a>
 
-    <a
-      href="https://wa.me/18137614272"
-      className="inline-flex items-center justify-center mt-8 rounded-lg border border-black bg-white px-8 py-3 text-base md:text-lg font-normal text-black transition-colors hover:bg-neutral-200"
-    >
-      SCHEDULE PICKUP NOW
-    </a>
+          <a 
+            href="mailto:hello@gobluue.com"
+            className="hover:opacity-80"
+          >
+            Contact Us
+          </a>
 
-    <div className="mt-4">
-      <a href="tel:8137614272" className="text-white underline underline-offset-2">
-        (813) 761-4272
-      </a>
-      <span className="text-white mx-2">·</span>
-      <a href="mailto:hello@gobluue.com" className="text-white underline underline-offset-2">
-        hello@gobluue.com
-      </a>
-    </div>
-  </div>
-</section>
+          <a 
+            href="https://instagram.com/go.bluue" 
+            target="_blank"
+            className="hover:opacity-80"
+          >
+            Instagram
+          </a>
+        </nav>
+      </header>
+
+      {/* HERO */}
+      <section className="relative w-full h-[420px] md:h-[480px] flex items-center justify-center overflow-hidden">
+        
+        {/* Imagen horizontal */}
+        <Image
+          src="/laundry_hero.jpg"
+          alt="Laundry Machine"
+          fill
+          className="object-cover brightness-[0.55]"
+        />
+
+        {/* Contenido encima */}
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-white text-3xl md:text-4xl font-semibold mb-2 drop-shadow-lg">
+            Premium Laundry Pickup & Delivery in 24 Hours
+          </h1>
+          <p className="text-white text-sm md:text-base mb-4 opacity-90 drop-shadow-lg">
+            Serving Wesley Chapel — simple, fast, contract-free.
+          </p>
+
+          <a
+            href="https://wa.me/18137614272"
+            className="inline-block bg-white text-black px-6 py-2 rounded-md border border-black text-sm font-medium hover:bg-gray-200 transition"
+          >
+            SCHEDULE PICKUP NOW
+          </a>
+
+          <div className="mt-3 text-white text-sm opacity-90">
+            <a href="tel:+18137614272">(813) 761-4272</a> ·{" "}
+            <a href="mailto:hello@gobluue.com">hello@gobluue.com</a>
+          </div>
+        </div>
+      </section>
+
+      {/* RESTO DE LA PÁGINA */}
+      <section className="text-center mt-20 px-6">
+        <h2 className="text-xl font-semibold mb-2">How GOBLUUE Laundry Works</h2>
+        <p className="text-slate-600 mb-10">
+          A modern, effortless system designed so you never have to worry about laundry again.
+        </p>
+      </section>
+
+    </main>
+  );
+}
 
         {/* HOW IT WORKS */}
         <section className="mt-16 md:mt-24">
