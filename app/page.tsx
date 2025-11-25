@@ -36,14 +36,14 @@ export default function Home() {
             <a href="#faq" className="hover:text-blue-600 transition">
               FAQ
             </a>
-            <a
+            
               href="https://instagram.com/go.bluue"
               target="_blank"
               className="hover:text-blue-600 transition"
             >
               Instagram
             </a>
-            <a
+            
               href="mailto:hello@gobluue.com"
               className="inline-flex items-center rounded-full border border-slate-900 px-4 py-1.5 text-xs font-semibold tracking-wide hover:bg-slate-900 hover:text-white transition"
             >
@@ -105,13 +105,13 @@ export default function Home() {
 
             {/* CTA BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-3 sm:justify-center pt-2">
-              <a
+              
                 href="https://wa.me/18137614272"
                 className="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-7 py-2.5 text-sm font-semibold shadow-sm hover:bg-slate-100 transition"
               >
                 Schedule pickup on WhatsApp
               </a>
-              <a
+              
                 href="tel:+18137614272"
                 className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-2.5 text-sm font-semibold hover:bg-white/10 transition"
               >
@@ -321,8 +321,8 @@ export default function Home() {
                 EXPERIENCE
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Imagine opening your door to perfectly folded, fresh laundry —
-                **every single week** — without touching a washer or dryer.
+                Imagine opening your door to perfectly folded, fresh laundry —{" "}
+                <strong>every single week</strong> — without touching a washer or dryer.
               </p>
             </div>
           </div>
@@ -371,7 +371,7 @@ export default function Home() {
                 <li>• No contracts. Cancel anytime.</li>
               </ul>
 
-              <a
+              
                 href="https://wa.me/18137614272"
                 className="block text-center rounded-full bg-blue-600 text-white text-sm font-semibold py-3 hover:bg-blue-700 transition"
               >
@@ -380,7 +380,7 @@ export default function Home() {
 
               <p className="text-[11px] text-slate-500">
                 Have questions before starting?{" "}
-                <a
+                
                   href="mailto:hello@gobluue.com"
                   className="text-blue-600 hover:underline"
                 >
@@ -424,9 +424,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                “I get hours of my week back. Their next-day delivery is
+                "I get hours of my week back. Their next-day delivery is
                 insanely reliable — clothes are always fresh and folded
-                perfectly.”
+                perfectly."
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Sarah M., Nurse
@@ -436,8 +436,8 @@ export default function Home() {
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                “Our family of five produces SO MUCH laundry. GOBLUUE has been
-                a lifesaver. We can&apos;t imagine going back.”
+                "Our family of five produces SO MUCH laundry. GOBLUUE has been
+                a lifesaver. We can&apos;t imagine going back."
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Brandon & Kelly
@@ -447,8 +447,8 @@ export default function Home() {
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6">
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
-                “For the price? Unreal. My shirts come back crisp and ready for
-                client meetings. It just works.”
+                "For the price? Unreal. My shirts come back crisp and ready for
+                client meetings. It just works."
               </p>
               <p className="text-sm font-semibold text-slate-900">
                 — Marcus T., Small Business Owner
@@ -472,7 +472,7 @@ export default function Home() {
             <p className="text-sm md:text-base text-slate-600">
               If you don&apos;t see your question here, send us a quick message
               on WhatsApp or email{" "}
-              <a
+              
                 href="mailto:hello@gobluue.com"
                 className="text-blue-600 hover:underline"
               >
@@ -542,13 +542,13 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
+            
               href="https://wa.me/18137614272"
               className="inline-flex items-center justify-center rounded-full bg-blue-600 text-white text-sm font-semibold px-8 py-3 hover:bg-blue-700 transition"
             >
               Schedule your first pickup
             </a>
-            <a
+            
               href="tel:+18137614272"
               className="inline-flex items-center justify-center rounded-full border border-slate-900 text-sm font-semibold px-8 py-3 hover:bg-slate-900 hover:text-white transition"
             >
@@ -568,7 +568,7 @@ export default function Home() {
             </p>
             <p>
               Contact:{" "}
-              <a
+              
                 href="mailto:hello@gobluue.com"
                 className="underline underline-offset-2"
               >
@@ -579,20 +579,20 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-4 text-center md:text-right">
-            <a
+            
               href="#home"
               className="hover:text-white transition underline-offset-2 hover:underline"
             >
               Home
             </a>
-            <a
+            
               href="https://instagram.com/go.bluue"
               target="_blank"
               className="hover:text-white transition underline-offset-2 hover:underline"
             >
               Instagram
             </a>
-            <a
+            
               href="mailto:hello@gobluue.com"
               className="hover:text-white transition underline-offset-2 hover:underline"
             >
@@ -604,4 +604,3 @@ export default function Home() {
     </main>
   );
 }
- 
