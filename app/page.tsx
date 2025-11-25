@@ -1,74 +1,122 @@
-import type { Metadata } from "next";
+    import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "GOBLUUE Laundry — Premium Laundry Pickup & Delivery in Wesley Chapel",
+  title: "GOBLUUE Laundry — Premium Laundry Pickup & Delivery in 24 Hours",
   description:
-    "Laundry pickup & delivery in Wesley Chapel with 24-hour turnaround. Simple monthly pricing, no contracts, and a premium modern experience.",
+    "Laundry pickup & delivery in Wesley Chapel with 24-hour turnaround. Simple monthly pricing, no contracts.",
 };
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <div className="max-w-4xl mx-auto px-4 py-16 md:py-24">
 
-       import Image from "next/image";
-
-export default function Home() {
-  return (
-    <main className="bg-white text-slate-900">
-      
       {/* HEADER */}
-      <header className="w-full bg-black text-white flex items-center justify-between px-6 py-3">
+      <header className="w-full bg-black text-white py-3 px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Image src="/2.svg" alt="logo" width={40} height={40} />
-          <span className="text-lg font-semibold tracking-tight">GOBLUUE</span>
+          <Image src="/logo.svg" alt="GoBluue Logo" width={40} height={40} />
+          <a href="/" className="font-medium">HOME</a>
         </div>
 
-        <nav className="flex items-center gap-6">
-          <a href="/" className="hover:opacity-80">Home</a>
-
-          <a 
-            href="mailto:hello@gobluue.com"
-            className="hover:opacity-80"
-          >
-            Contact Us
-          </a>
-
-          <a 
-            href="https://instagram.com/go.bluue" 
+        <div className="flex items-center gap-6">
+          <a
+            href="https://instagram.com/go.bluue"
             target="_blank"
-            className="hover:opacity-80"
+            rel="noopener noreferrer"
+            className="hover:opacity-70"
           >
             Instagram
           </a>
-        </nav>
+
+          <a
+            href="mailto:hello@gobluue.com"
+            className="border border-white px-3 py-1 rounded hover:bg-white hover:text-black transition"
+          >
+            Contact Us
+          </a>
+        </div>
       </header>
 
       {/* HERO */}
-      <section className="relative w-full h-[420px] md:h-[480px] flex items-center justify-center overflow-hidden">
-        
-        {/* Imagen horizontal */}
+      <section className="relative w-full h-[420px] md:h-[460px] flex items-center justify-center">
         <Image
           src="/laundry_hero.jpg"
-          alt="Laundry Machine"
+          alt="Laundry machine"
           fill
-          className="object-cover brightness-[0.55]"
+          className="object-cover"
+          priority
         />
 
-        {/* Contenido encima */}
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-white text-3xl md:text-4xl font-semibold mb-2 drop-shadow-lg">
-            Premium Laundry Pickup & Delivery in 24 Hours
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/35"></div>
+
+        {/* TEXT */}
+        <div className="relative text-center text-white px-4">
+          <h1 className="text-3xl md:text-5xl font-semibold">
+            Premium Laundry Pickup <br /> & Delivery in 24 Hours
           </h1>
-          <p className="text-white text-sm md:text-base mb-4 opacity-90 drop-shadow-lg">
+          <p className="mt-2 text-sm md:text-base">
             Serving Wesley Chapel — simple, fast, contract-free.
           </p>
 
           <a
             href="https://wa.me/18137614272"
-            className="inline-block bg-white text-black px-6 py-2 rounded-md border border-black text-sm font-medium hover:bg-gray-200 transition"
+            className="mt-5 inline-block bg-white text-black px-6 py-3 rounded shadow-md hover:opacity-80 transition"
           >
+            SCHEDULE PICKUP NOW
+          </a>
+
+          <div className="mt-3 text-sm">
+            <a href="tel:+18137614272" className="underline mr-2">
+              (813) 761-4272
+            </a>
+            <a href="mailto:hello@gobluue.com" className="underline">
+              hello@gobluue.com
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS */}
+      <section className="mt-16 text-center px-6">
+        <h2 className="text-xl md:text-2xl font-semibold">
+          How GOBLUUE Laundry Works
+        </h2>
+        <p className="text-slate-600 mt-2 max-w-xl mx-auto">
+          A modern, effortless system designed so you never have to worry about laundry again.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 max-w-4xl mx-auto text-left">
+
+          <div>
+            <h3 className="font-bold text-sm">STEP 1</h3>
+            <p className="font-medium mt-1">Schedule Pickup</p>
+            <p className="text-slate-600 text-sm mt-1">
+              Choose the pickup time that works best for you.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-sm">STEP 2</h3>
+            <p className="font-medium mt-1">We Wash & Fold</p>
+            <p className="text-slate-600 text-sm mt-1">
+              Professionally washed, dried, and folded.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-sm">STEP 3</h3>
+            <p className="font-medium mt-1">24-Hour Delivery</p>
+            <p className="text-slate-600 text-sm mt-1">
+              Your laundry is delivered the next day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  );
+}
             SCHEDULE PICKUP NOW
           </a>
 
