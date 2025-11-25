@@ -12,41 +12,46 @@ export default function Home() {
     <main className="min-h-screen bg-white text-slate-900">
       <div className="max-w-4xl mx-auto px-4 py-16 md:py-24">
 
-        {/* HERO */}
-        <section className="text-center">
-          <h1 className="text-3xl md:text-5xl font-medium tracking-tight">
-            Premium Laundry Pickup & Delivery in 24 Hours
-          </h1>
-          <p className="mt-4 text-lg md:text-xl font-light text-slate-700">
-            Serving Wesley Chapel — simple, fast, contract-free.
-          </p>
+       {/* HERO */}
+<section
+  className="relative h-[90vh] w-full flex items-center justify-center text-center"
+  style={{
+    backgroundImage: "url('/laundry_hero.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Overlay oscuro suave */}
+  <div className="absolute inset-0 bg-black/30"></div>
 
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <a
-              href="https://wa.me/18137614272"
-              className="inline-flex items-center justify-center rounded-lg border border-black bg-black px-8 py-3 text-base md:text-lg font-normal text-white transition-colors hover:bg-white hover:text-black"
-            >
-              SCHEDULE PICKUP NOW
-            </a>
-            <div className="text-sm md:text-base font-light text-slate-700">
-              📞 <a href="tel:+18137614272" className="underline">(813) 761-4272</a> ·{" "}
-              <a href="mailto:hello@gobluue.com" className="underline">hello@gobluue.com</a>
-            </div>
-          </div>
+  {/* Contenido */}
+  <div className="relative z-10 max-w-2xl px-6">
+    <h1 className="text-4xl md:text-6xl font-medium text-white">
+      Premium Laundry Pickup & Delivery in 24 Hours
+    </h1>
 
-          <div className="mt-10 rounded-2xl overflow-hidden border border-slate-200">
-            <Image
-              src="/laundry-hero.jpg"
-              alt="Freshly folded laundry neatly stacked"
-              width={1400}
-              height={800}
-              className="w-full h-auto object-cover"
-              priority
-            />
-          </div>
+    <p className="mt-4 text-lg md:text-xl text-white/90">
+      Serving Wesley Chapel — simple, fast, contract-free.
+    </p>
 
-          <hr className="mt-12 border-slate-200" />
-        </section>
+    <a
+      href="https://wa.me/18137614272"
+      className="inline-flex items-center justify-center mt-8 rounded-lg border border-black bg-white px-8 py-3 text-base md:text-lg font-normal text-black transition-colors hover:bg-neutral-200"
+    >
+      SCHEDULE PICKUP NOW
+    </a>
+
+    <div className="mt-4">
+      <a href="tel:8137614272" className="text-white underline underline-offset-2">
+        (813) 761-4272
+      </a>
+      <span className="text-white mx-2">·</span>
+      <a href="mailto:hello@gobluue.com" className="text-white underline underline-offset-2">
+        hello@gobluue.com
+      </a>
+    </div>
+  </div>
+</section>
 
         {/* HOW IT WORKS */}
         <section className="mt-16 md:mt-24">
