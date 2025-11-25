@@ -1,76 +1,67 @@
-import type { Metadata } from "next";
+// app/page.tsx
 import Image from "next/image";
-
-export const metadata: Metadata = {
-  title: "GOBLUUE Laundry — Premium Laundry Pickup & Delivery in 24 Hours",
-  description:
-    "Laundry pickup & delivery in Wesley Chapel with 24-hour turnaround. Simple monthly pricing, no contracts.",
-};
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
-
+    <main className="bg-white text-slate-900">
       {/* HEADER */}
       <header className="w-full bg-black text-white py-3 px-6 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <Image src="/logo.svg" alt="GoBluue Logo" width={40} height={40} />
-          <a href="/" className="font-medium">HOME</a>
-        </div>
+        <div className="text-lg font-semibold tracking-wide">GOBLUUE</div>
 
-        <div className="flex items-center gap-6">
+        <nav className="flex items-center gap-6 text-sm">
+          <a href="/" className="hover:text-gray-300 transition">Home</a>
+
           <a
-            href="https://instagram.com/go.bluue"
+            href="https://wa.me/18137614272"
             target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-70"
-          >
-            Instagram
-          </a>
-
-          <a
-            href="mailto:hello@gobluue.com"
-            className="border border-white px-3 py-1 rounded hover:bg-white hover:text-black transition"
+            className="hover:text-gray-300 transition"
           >
             Contact Us
           </a>
-        </div>
+
+          <a
+            href="https://instagram.com/go.bluue"
+            target="_blank"
+            className="hover:text-gray-300 transition"
+          >
+            Instagram
+          </a>
+        </nav>
       </header>
 
       {/* HERO */}
-      <section className="relative w-full h-[420px] md:h-[460px] flex items-center justify-center">
+      <section className="relative w-full h-[420px] md:h-[520px] overflow-hidden flex items-center justify-center">
         <Image
           src="/laundry_hero.jpg"
           alt="Laundry machine"
           fill
-          className="object-cover"
           priority
+          className="object-cover"
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/35"></div>
+        <div className="absolute inset-0 bg-black/45" />
 
-        {/* TEXT */}
-        <div className="relative text-center text-white px-4">
-          <h1 className="text-3xl md:text-5xl font-semibold">
+        {/* CONTENT */}
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-white text-3xl md:text-4xl font-semibold drop-shadow-lg mb-3">
             Premium Laundry Pickup <br /> & Delivery in 24 Hours
           </h1>
-          <p className="mt-2 text-sm md:text-base">
+
+          <p className="text-white text-sm md:text-base opacity-90 mb-6">
             Serving Wesley Chapel — simple, fast, contract-free.
           </p>
 
           <a
             href="https://wa.me/18137614272"
-            className="mt-5 inline-block bg-white text-black px-6 py-3 rounded shadow-md hover:opacity-80 transition"
+            className="inline-block bg-white text-black px-6 py-3 rounded-md font-medium text-sm hover:bg-gray-200 transition border border-black"
           >
             SCHEDULE PICKUP NOW
           </a>
 
-          <div className="mt-3 text-sm">
-            <a href="tel:+18137614272" className="underline mr-2">
-              (813) 761-4272
-            </a>
-            <a href="mailto:hello@gobluue.com" className="underline">
+          <div className="mt-3 text-white text-sm opacity-90">
+            <a href="tel:+18137614272" className="hover:underline">(813) 761-4272</a> ·{" "}
+            <a href="mailto:hello@gobluue.com" className="hover:underline">
               hello@gobluue.com
             </a>
           </div>
@@ -78,189 +69,64 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="mt-16 text-center px-6">
-        <h2 className="text-xl md:text-2xl font-semibold">
-          How GOBLUUE Laundry Works
-        </h2>
-        <p className="text-slate-600 mt-2 max-w-xl mx-auto">
+      <section className="text-center mt-20 px-6">
+        <h2 className="text-xl font-semibold mb-2">How GOBLUUE Laundry Works</h2>
+        <p className="text-slate-600 mb-10">
           A modern, effortless system designed so you never have to worry about laundry again.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 max-w-4xl mx-auto text-left">
-
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto">
           <div>
-            <h3 className="font-bold text-sm">STEP 1</h3>
-            <p className="font-medium mt-1">Schedule Pickup</p>
+            <h3 className="text-sm font-semibold text-slate-700 mb-1">STEP 1</h3>
+            <p className="font-medium">Schedule Pickup</p>
             <p className="text-slate-600 text-sm mt-1">
               Choose the pickup time that works best for you.
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold text-sm">STEP 2</h3>
-            <p className="font-medium mt-1">We Wash & Fold</p>
+            <h3 className="text-sm font-semibold text-slate-700 mb-1">STEP 2</h3>
+            <p className="font-medium">We Wash & Fold</p>
             <p className="text-slate-600 text-sm mt-1">
               Professionally washed, dried, and folded.
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold text-sm">STEP 3</h3>
-            <p className="font-medium mt-1">24-Hour Delivery</p>
+            <h3 className="text-sm font-semibold text-slate-700 mb-1">STEP 3</h3>
+            <p className="font-medium">24-Hour Delivery</p>
             <p className="text-slate-600 text-sm mt-1">
-              Your laundry is delivered the next day.
+              Your laundry is delivered next day.
             </p>
           </div>
         </div>
       </section>
 
-    </main>
-  );
-}
-            SCHEDULE PICKUP NOW
+      {/* PRICING */}
+      <section className="text-center mt-20 px-6 mb-20">
+        <h2 className="text-xl font-semibold mb-2">One Plan. One Price.</h2>
+        <p className="text-slate-600 mb-10">Simple monthly pricing — no contracts, no hidden fees.</p>
+
+        <div className="border border-slate-300 rounded-lg p-8 w-full max-w-md mx-auto">
+          <h3 className="font-semibold text-lg mb-4">GOBLUUE Plan — $129 / month</h3>
+
+          <ul className="text-left text-sm text-slate-700 space-y-1 mb-6 max-w-xs mx-auto">
+            <li>• 20 lbs per week</li>
+            <li>• 1 weekly pickup</li>
+            <li>• Wash, dry & fold</li>
+            <li>• 24-hour delivery</li>
+            <li>• Phone/text support</li>
+            <li>• Cancel anytime</li>
+          </ul>
+
+          <a
+            href="https://wa.me/18137614272"
+            className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium text-sm hover:bg-gray-800 transition"
+          >
+            GET STARTED
           </a>
-
-          <div className="mt-3 text-white text-sm opacity-90">
-            <a href="tel:+18137614272">(813) 761-4272</a> ·{" "}
-            <a href="mailto:hello@gobluue.com">hello@gobluue.com</a>
-          </div>
         </div>
       </section>
-
-      {/* RESTO DE LA PÁGINA */}
-      <section className="text-center mt-20 px-6">
-        <h2 className="text-xl font-semibold mb-2">How GOBLUUE Laundry Works</h2>
-        <p className="text-slate-600 mb-10">
-          A modern, effortless system designed so you never have to worry about laundry again.
-        </p>
-      </section>
-
-    </main>
-  );
-}
-
-        {/* HOW IT WORKS */}
-        <section className="mt-16 md:mt-24">
-          <h2 className="text-2xl md:text-3xl font-normal tracking-tight text-center">
-            How GOBLUUE Laundry Works
-          </h2>
-          <p className="mt-4 text-base md:text-lg font-light text-slate-700 text-center max-w-2xl mx-auto">
-            A modern, effortless system designed so you never have to worry about laundry again.
-          </p>
-
-          <div className="mt-10 grid gap-8 md:grid-cols-3">
-            <div>
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">STEP 1</p>
-              <h3 className="mt-2 text-lg font-medium">Schedule Pickup</h3>
-              <p className="mt-2 text-sm md:text-base font-light text-slate-700">
-                Choose the pickup time that works best for you.
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">STEP 2</p>
-              <h3 className="mt-2 text-lg font-medium">We Wash & Fold</h3>
-              <p className="mt-2 text-sm md:text-base font-light text-slate-700">
-                Professionally washed, dried, and folded.
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-slate-500">STEP 3</p>
-              <h3 className="mt-2 text-lg font-medium">24-Hour Delivery</h3>
-              <p className="mt-2 text-sm md:text-base font-light text-slate-700">
-                Your laundry is delivered next day.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <hr className="mt-16 border-slate-200" />
-
-        {/* VISUAL SECTION */}
-        <section className="mt-16 md:mt-24 grid gap-10 md:grid-cols-2 items-center">
-          <div className="order-2 md:order-1">
-            <h2 className="text-2xl md:text-3xl font-normal tracking-tight">
-              Perfectly folded, ready to put away.
-            </h2>
-            <p className="mt-4 text-base md:text-lg font-light text-slate-700">
-              Your clothes come back neatly folded and organized — ready to go straight into your
-              closet. No chaos, no laundry piles, just a clean, fresh reset every week.
-            </p>
-            <p className="mt-4 text-sm md:text-base font-light text-slate-700">
-              Designed for busy professionals, couples and families who want hotel-level quality at
-              home, without lifting a finger.
-            </p>
-          </div>
-          <div className="order-1 md:order-2">
-            <div className="rounded-2xl overflow-hidden border border-slate-200">
-              <Image
-                src="/laundry-folded.jpg"
-                alt="Stack of neatly folded clothes on a clean surface"
-                width={900}
-                height={900}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        <hr className="mt-16 border-slate-200" />
-
-        {/* PRICING */}
-        <section className="mt-16 md:mt-24 text-center">
-          <h2 className="text-2xl md:text-3xl font-normal tracking-tight">
-            One Plan. One Price.
-          </h2>
-          <p className="mt-4 text-base md:text-lg font-light text-slate-700 max-w-2xl mx-auto">
-            Simple monthly pricing — no contracts, no hidden fees.
-          </p>
-
-          <div className="mt-10 inline-block border border-slate-200 rounded-2xl px-8 py-8 text-left max-w-xl bg-white/60 backdrop-blur">
-            <h3 className="text-xl md:text-2xl font-medium">GOBLUUE Plan — $129 / month</h3>
-            <p className="mt-3 text-sm md:text-base font-light text-slate-700 leading-relaxed">
-              • 20 lbs per week <br />
-              • 1 weekly pickup <br />
-              • Wash, dry & fold <br />
-              • 24-hour delivery <br />
-              • Phone/text support <br />
-              • Cancel anytime
-            </p>
-
-            <div className="mt-6">
-              <a
-                href="https://wa.me/18137614272"
-                className="inline-flex items-center justify-center rounded-lg border border-black bg-black px-6 py-2.5 text-sm md:text-base font-normal text-white transition-colors hover:bg-white hover:text-black"
-              >
-                GET STARTED
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* FINAL CTA */}
-        <section className="mt-20 md:mt-28 text-center">
-          <h2 className="text-2xl md:text-3xl font-normal tracking-tight">
-            Ready to never do laundry again?
-          </h2>
-          <p className="mt-4 text-base md:text-lg font-light text-slate-700 max-w-2xl mx-auto">
-            Schedule your first pickup today.
-          </p>
-
-          <div className="mt-8 flex flex-col items-center gap-3">
-            <a
-              href="https://wa.me/18137614272"
-              className="inline-flex items-center justify-center rounded-lg border border-black bg-black px-8 py-3 text-base md:text-lg font-normal text-white transition-colors hover:bg-white hover:text-black"
-            >
-              SCHEDULE NOW
-            </a>
-          </div>
-        </section>
-
-        <footer className="mt-16 md:mt-24 border-t border-slate-200 pt-6 pb-10 text-center text-xs md:text-sm font-light text-slate-500">
-          <div>© {new Date().getFullYear()} GOBLUUE SERVICES LLC — Wesley Chapel, FL</div>
-          <div className="mt-1">Operated by GOBLUUE Laundry</div>
-        </footer>
-
-      </div>
     </main>
   );
 }
